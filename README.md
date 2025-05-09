@@ -1,16 +1,52 @@
-# uppgift3_new_app
+# Flutter Parkeringsapplikation - Uppgift 3
 
-A new Flutter project.
+## Introduktion
 
-## Getting Started
+I denna uppgift har jag vidareutvecklat min Flutter-applikation genom att implementera BLoC (Business Logic Component) pattern för state management och skriva enhetstester för min affärslogik.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## Funktioner
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Användarhantering
+-  Registrering av nya användare
+-  Inloggning & utloggning
+  ## Inlogging
+  -Logga in med din e-postadress och lösenord.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Registerar ny konto
+ -Ange namn
+ -Ange e-postadress
+-Ange lösenord
+
+###  Fordonshantering
+-  Lägg till / ta bort fordon
+-  Lista fordon
+
+### Parkeringsfunktioner
+-  Visa lediga parkeringsplatser
+- Starta / avsluta parkering
+-  Visa parkeringshistorik
+----
+
+## Navigation
+
+- `BottomNavigationBar` används för mobil
+- `NavigationRail` kan användas för sidnavigering på webb/desktop
+
+---
+
+## Installation
+
+### Förkrav
+- [Flutter SDK](https://flutter.dev/docs/get-started/install)
+- Firebase-projekt med Firestore och Authentication aktiverat
+
+###  Steg för att köra
+
+```bash
+git clone https://github.com/ditt-användarnamn/parking_user.git
+cd parking_user
+flutter pub get
+flutter run
+or run without debugging
